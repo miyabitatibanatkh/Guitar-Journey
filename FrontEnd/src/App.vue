@@ -6,20 +6,13 @@ const appTitle = 'Guitar Journey'
   <main class="home-page">
     <h1>{{ appTitle }}</h1>
 
-    <section class="practice-card">
-      <h2>今日练习</h2>
-      <p>和弦转换练习 20 分钟</p>
-    </section>
+    <nav>
+      <RouterLink to="/">首页</RouterLink>
+      <router-link to="/practice">曲谱练习</router-link>
+      <router-link to="/record">学习记录</router-link>
+    </nav>
 
-    <section class="practice-card">
-      <h2>曲谱练习</h2>
-      <p>选择一首歌曲，开始今天的练习。</p>
-    </section>
-
-    <section class="practice-card">
-      <h2>学习记录</h2>
-      <p>查看最近的练习时间、曲目和熟练度。</p>
-    </section>
+    <RouterView />
   </main>
 </template>
 
